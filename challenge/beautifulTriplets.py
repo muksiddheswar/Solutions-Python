@@ -5,10 +5,14 @@
 def beautifulTriplets(d, arr):
     triplets = 0
     for i in range(len(arr) - 2):
-        for j in range(i+1, len(arr) -1):
-            for k in range(i+2, len(arr)):
-                if (arr[j] - arr[i]) == d and (arr[k] - arr[j]) == d:
-                    triplets += 1
+        if arr[i] + d in arr[i+1:] and arr[i] + 2*d in arr[i+2:]:
+            triplets += 1
+
+        # for j in range(i+1, len(arr) -1):
+        #     if (arr[j] - arr[i]) == d:
+        #         for k in range(i+2, len(arr)):
+        #             if (arr[k] - arr[j]) == d:
+        #                 triplets += 1
 
     return triplets
 
