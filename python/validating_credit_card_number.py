@@ -10,6 +10,7 @@ def validity_test(number):
         return 'Invalid'
     return 'Valid'
 
+
 if __name__ == '__main__':
     n = input()
     for i in range(int(n)):
