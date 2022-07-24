@@ -109,7 +109,9 @@ def matrixRotation(matrix, r):
                             i_index += corner_i
                             j_index = corner_j
 
-                        new_matrix[i_index][j_index] = matrix[corner_i + i][corner_j]
+                        # a = new_matrix[i_index][j_index]
+                        b = matrix[corner_i + i][corner_j]
+                        new_matrix[i_index][j_index] = b
 
                     for j in range(n):
                         # Row Element
