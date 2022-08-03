@@ -6,8 +6,8 @@ def countingSort(arr):
         counts[i] += 1
     return counts
 
-if __name__ == '__main__':
 
+if __name__ == '__main__':
     n = int(input().strip())
     arr = list(map(int, input().rstrip().split()))
     result = countingSort(arr)
