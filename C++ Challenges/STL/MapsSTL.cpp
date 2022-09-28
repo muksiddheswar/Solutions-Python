@@ -3,9 +3,10 @@
 using namespace std;
 
 int main() {
-    map<int,int>s;
+    map<string,int>s;
     
-    int Q, i, y, x, z;
+    int Q, i, y, z;
+    string x;
     bool is_in;
 
     cin>>Q;
@@ -13,28 +14,27 @@ int main() {
         cin>>y;
         if (y == 1){
             cin>>x>>z;
-
             auto search = s.find(x);
 
             if (search != s.end())
-                search->second += z;
+                s[x] = search->second += z;
             else
                 s.insert(make_pair(x,z));
-
-            }
+        }
 
         else if (y==2){
             cin>>x;
             s.erase(x);
         }
         
-        else
+        else{
             cin>>x;
             auto search = s.find(x);
-            if (search != s.end())
+            if (search == s.end())
                 cout<<0<<endl;
             else
                 cout<<search->second<<endl;
+        }
     }
     return 0;
 }
