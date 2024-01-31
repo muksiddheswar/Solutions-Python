@@ -1,0 +1,4 @@
+0,Organic
+1,Free Range
+2,Barn
+3,Cage
