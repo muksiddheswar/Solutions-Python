@@ -1,3 +1,6 @@
+# Favourite Singer
+# https://www.hackerearth.com/practice/basic-programming/input-output/basics-of-input-output/practice-problems/algorithm/favourite-singer-a18e086a/
+
 songs = int(input())
 singer_list = input().split(' ')
 
