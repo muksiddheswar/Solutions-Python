@@ -19,7 +19,7 @@ def time_delta(t1, t2):
     y2 = time2[3]
 
     year_difference = abs(y1 - y2)
-    total_difference =
+    # total_difference =
 
 
     # Equalise Month
